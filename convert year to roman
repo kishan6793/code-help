@@ -3,11 +3,8 @@
 #include <math.h>
 #include <stdlib.h>
 
-int main() {
-
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
-    int n;
-    scanf("%d",&n);
+void convert_roman(int n)
+{
     while(n != 0)
     {
         if(n>=1000)
@@ -76,5 +73,15 @@ int main() {
             n-=1;
         }
     }
+    
+}
+
+
+
+int main() {
+
+    int n;
+    scanf("%d",&n);
+    convert_roman(n);
     return 0;
 }
